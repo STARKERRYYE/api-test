@@ -116,7 +116,7 @@
                         <type>runtime</type>
                         <properties>
                             <!-- tomcat管理界面-->
-                            <cargo.remote.uri>http://127.0.0.1:8088/manager/text/list</cargo.remote.uri>
+                            <cargo.remote.uri>http://tomcat:8088/manager/text</cargo.remote.uri>
                             <!-- tomcat管理界面用户名和密码-->
                             <cargo.remote.username>admin</cargo.remote.username>
                             <cargo.remote.password>admin</cargo.remote.password>
