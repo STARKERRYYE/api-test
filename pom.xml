@@ -102,20 +102,28 @@
                 </configuration>
             </plugin>
 
-<!--            <plugin>-->
-<!--                <groupId>org.codehaus.cargo</groupId>-->
-<!--                <artifactId>cargo-maven2-plugin</artifactId>-->
-<!--                <version>1.9.13</version>-->
-<!--                <configuration>-->
-<!--                    <container>-->
-<!--                        <type>tomcat8.0</type>-->
-<!--                        <url>http://127.0.0.1:8088/manager/text</url>-->
-<!--                        <username>admin</username>-->
-<!--                        <password>admin</password>-->
-<!--                    </container>-->
-
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.4.9</version>
+                <configuration>
+                    <container>
+                        <!-- 容器版本名称-->
+                        <containerId>Tomcat 8.x</containerId>
+                        <type>remote</type>
+                    </container>
+                    <configuration>
+                        <type>runtime</type>
+                        <properties>
+                            <!-- tomcat管理界面-->
+                            <cargo.remote.uri>http://127.0.0.1：8:8088/manager/text</cargo.remote.uri>
+                            <!-- tomcat管理界面用户名和密码-->
+                            <cargo.remote.username>admin</cargo.remote.username>
+                            <cargo.remote.password>admin</cargo.remote.password>
+                        </properties>
+                    </configuration>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
