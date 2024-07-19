@@ -8,6 +8,8 @@
         <version>2.6.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+
     <groupId>com.example</groupId>
     <artifactId>api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -16,6 +18,9 @@
     <description>api</description>
     <properties>
         <java.version>11</java.version>
+
+        <cargo.remote.username>admin</cargo.remote.username>
+        <cargo.remote.password>admin</cargo.remote.password>
     </properties>
     <dependencies>
         <dependency>
@@ -96,6 +101,21 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.cargo</groupId>-->
+<!--                <artifactId>cargo-maven2-plugin</artifactId>-->
+<!--                <version>1.9.13</version>-->
+<!--                <configuration>-->
+<!--                    <container>-->
+<!--                        <type>tomcat8.0</type>-->
+<!--                        <url>http://127.0.0.1:8088/manager/text</url>-->
+<!--                        <username>admin</username>-->
+<!--                        <password>admin</password>-->
+<!--                    </container>-->
+
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
