@@ -109,11 +109,11 @@
                 <configuration>
                     <container>
                         <!-- 容器版本名称-->
-                        <containerId>Tomcat 8.0</containerId>
+                        <containerId>tomcat8x</containerId>
                         <type>remote</type>
                     </container>
                     <configuration>
-                        <type>runtime</type>
+                        <type>tomcat8x</type>
                         <properties>
                             <!-- tomcat管理界面-->
                             <cargo.remote.uri>http://172.18.0.1:8088/manager/text</cargo.remote.uri>
