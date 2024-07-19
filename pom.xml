@@ -109,7 +109,7 @@
                 <configuration>
                     <container>
                         <!-- 容器版本名称-->
-                        <containerId>Tomcat 8.x</containerId>
+                        <containerId>tomcat</containerId>
                         <type>remote</type>
                     </container>
                     <configuration>
